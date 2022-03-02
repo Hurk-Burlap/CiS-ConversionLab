@@ -28,7 +28,7 @@ public class test {
 					continueProgram = false;
 					break;
 				default:
-					System.out.println("That is not a valid input, please type '1' or '2' to make your selection.");
+					System.out.println("That is not a valid input, please type '1', '2', or '3' to make your selection.");
 					
 			}
 		}
@@ -36,11 +36,17 @@ public class test {
 	}
 
 	private static void F2C() {
-		// TODO Auto-generated method stub
-		System.out.println("This works");
+		System.out.println("What is the temperature in degrees Farenheit?");
+		Scanner in = new Scanner(System.in);
+		double tempF = in.nextDouble();
+		System.out.println(tempF + " degrees Farenheit is " + ((tempF - 32.0) * 5.0/9.0) + " degrees Farenheit");	
 	}
 	private static void C2F() {
-		System.out.println("This works");
+		System.out.println("What is the temperature in degrees Celsius?");
+		Scanner in = new Scanner(System.in);
+		double tempC = in.nextDouble();
+		System.out.println(tempC + " degrees Celsius is " + ((tempC * (9.0/5.0)) + 32.0) + " degrees Farenheit");
+		
 	}
 
 }
